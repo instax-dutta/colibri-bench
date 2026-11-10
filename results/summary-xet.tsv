@@ -1,0 +1,7 @@
+model_id	download_gb	prompt_tok_s	decode_tok_s	coli_version	notes
+deepseek-v4-flash-reap	84.7	-	0.32	0a5504a	xet max-new=64; see datapoint-deepseek-v4-flash-reap.md
+deepseek-v4-flash	166.9	-	0.29	0a5504a	xet max-new=32; see datapoint-deepseek-v4-flash.md
+qwen38-flash-next	185.6	-	0.09	0a5504a	xet max-new=64; see datapoint-qwen38-flash-next.md
+mimo-v2.6-flash	171.8	-	0.07	0a5504a	xet max-new=32; see datapoint-mimo-v2.6-flash.md
+glm-5.3	419.3	-	0.03	0a5504a	xet max-new=32; see datapoint-glm-5.3.md
+glm-5.2	429.3	-	0.03	0a5504a	xet max-new=32; see datapoint-glm-5.2.md

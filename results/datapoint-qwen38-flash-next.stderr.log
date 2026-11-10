@@ -1,0 +1,45 @@
+[gateway] 65536 tokens of context (3.6 GB of conversation state of 47.0 GB); --ctx sets it
+[OMP] qwen38: hot-thread tuning, re-exec once (COLI_NO_OMP_TUNE=1 to skip)
+== Qwen3.8-Flash-Next native text engine | cache=16/layer | CPU ==
+[tok] loaded 248044 base pieces + 33 added tokens (max id 248076) from /home/tejes/colibri-models/qwen38-flash-next/tokenizer.json
+[qwen38] vision tower: 27 blocks, hidden 1152, 16 heads, patch 16, merge 2
+[qwen38] native text weights: prefix=model.language_model, 48 layers, PLE=1, cache=16/layer, FP8=native, BF16=native (resident matrices 10.88 GiB)
+[qwen38] MTP head mtp.*: wiring b (a norm per stream, fc_hidden per stream), RoPE base 1e+07, 172.66 MiB resident; routed experts F8_E4M3 from the snapshot, cache 16 (Q38_MTP_CAP) x 4.69 MiB = 0.07 GiB full
+[qwen38] MTP norm weights, mean: embedding -0.7642, hidden -0.3284, mixer 3.7881 (q38_rms0 scales by 1+w; a plain norm's weights would sit near 1)
+[qwen38] trunk: 570 matrices int8 on the CPU (4.06 GiB, 8.10 GiB of BF16 released) in 3.5s; Q38_TRUNK_CPU_INT8=0 keeps BF16
+[qwen38] routed experts: native FP8, 4915200 bytes (4.69 MiB) per expert + 28.1 MiB resident scale bank; cache 16/layer x 48 layers = 3.52 GiB full; 38.8 GB available now holds 164/layer
+[qwen38 MTP] draft vocabulary: top 16000 + 3/4 rule + conversation, no counts file at /home/tejes/colibri-models/qwen38-flash-next/.coli_vocab yet
+[qwen38] trunk: 570 int8 matrices interleaved by 16 for the CPU in 0.55s (Q38_ILV16=0 keeps the rows)
+resident weights loaded in 32.1s | RSS after load: 11.74 GB
+[datapoint] persistent cold request 1/1
+[qwen38 MTP] turn 1: 1.97 tokens/forward (32 forwards per 63 tokens) | acceptance 49.2% (31/63 drafts) | wiring b | fixed depth, by position: 1 65.6% (21/32) 2 32.3% (10/31) 3 0.0% (0/0)
+[qwen38 spec gate] turn 1: T(1) 0.0 ms, rows 2:1.50 3:2.00, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen38 lookup] turn 1: 1.97 tokens/forward (32 forwards per 63 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 2 declined, 0 probes
+[qwen38 MTP] turn 1: draft list 16005 tokens on average, 81.0% of picks inside, 12 ids appended, 0 rebuilds
+[datapoint] warm-identical upper bound 1/1
+[qwen38 MTP] turn 2: 2.42 tokens/forward (26 forwards per 63 tokens) | acceptance 72.5% (37/51 drafts) | wiring b | fixed depth, by position: 1 84.6% (22/26) 2 60.0% (15/25) 3 0.0% (0/0)
+[qwen38 spec gate] turn 2: T(1) 0.0 ms, rows 2:1.50 3:2.00, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen38 lookup] turn 2: 2.42 tokens/forward (26 forwards per 63 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 2 declined, 0 probes
+[qwen38 MTP] turn 2: draft list 16000 tokens on average, 100.0% of picks inside, 0 ids appended, 0 rebuilds
+[datapoint] rotating prompt 1/4 (suite 1/4)
+[qwen38 MTP] turn 3: 2.03 tokens/forward (31 forwards per 63 tokens) | acceptance 54.2% (32/59 drafts) | wiring b | fixed depth, by position: 1 63.3% (19/30) 2 44.8% (13/29) 3 0.0% (0/0)
+[qwen38 spec gate] turn 3: T(1) 5287.1 ms, rows 2:3.46 3:4.33, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen38 lookup] turn 3: 2.03 tokens/forward (31 forwards per 63 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 1 declined, 0 probes
+[qwen38 MTP] turn 3: draft list 16005 tokens on average, 82.5% of picks inside, 11 ids appended, 0 rebuilds
+[datapoint] rotating prompt 2/4 (suite 2/4)
+[qwen38 MTP] turn 4: 2.52 tokens/forward (25 forwards per 63 tokens) | acceptance 80.9% (38/47 drafts) | wiring b | fixed depth, by position: 1 83.3% (20/24) 2 78.3% (18/23) 3 0.0% (0/0)
+[qwen38 spec gate] turn 4: T(1) 6453.1 ms, rows 2:2.44 3:3.49, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen38 lookup] turn 4: 2.52 tokens/forward (25 forwards per 63 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 2 declined, 0 probes
+[qwen38 MTP] turn 4: draft list 16006 tokens on average, 85.7% of picks inside, 9 ids appended, 0 rebuilds
+[datapoint] rotating prompt 3/4 (suite 3/4)
+[qwen38 MTP] turn 5: 2.03 tokens/forward (31 forwards per 63 tokens) | acceptance 52.5% (32/61 drafts) | wiring b | fixed depth, by position: 1 64.5% (20/31) 2 40.0% (12/30) 3 0.0% (0/0)
+[qwen38 spec gate] turn 5: T(1) 0.0 ms, rows 2:1.50 3:2.00, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen38 lookup] turn 5: 2.03 tokens/forward (31 forwards per 63 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 3 declined, 1 probes
+[qwen38 MTP] turn 5: draft list 16001 tokens on average, 92.1% of picks inside, 5 ids appended, 0 rebuilds
+[datapoint] rotating prompt 4/4 (suite 4/4)
+[qwen38 MTP] turn 6: 1.70 tokens/forward (37 forwards per 63 tokens) | acceptance 35.6% (26/73 drafts) | wiring b | fixed depth, by position: 1 45.9% (17/37) 2 25.0% (9/36) 3 0.0% (0/0)
+[qwen38 spec gate] turn 6: T(1) 0.0 ms, rows 2:1.50 3:2.00, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen38 lookup] turn 6: 1.70 tokens/forward (37 forwards per 63 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 1 declined, 0 probes
+[qwen38 MTP] turn 6: draft list 16011 tokens on average, 63.5% of picks inside, 23 ids appended, 0 rebuilds
+[STATS] 352870 selections across 18037 distinct experts -> /home/tejes/colibri-models/qwen38-flash-next/.coli_usage
+[STATS] 562 tokens across 291 distinct -> /home/tejes/colibri-models/qwen38-flash-next/.coli_vocab

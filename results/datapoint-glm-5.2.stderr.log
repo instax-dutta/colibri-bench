@@ -1,0 +1,135 @@
+[gateway] 32768 tokens of context (6.0 GB of conversation state of 47.0 GB); --ctx sets it
+[OMP] hot-thread tuning: re-exec once (COLI_NO_OMP_TUNE=1 to skip)
+[KV16] latent KV cache in float16 (half the RAM of float32; KV16=0 keeps float32)
+[MTP] active: native speculative decoding (draft=1)
+[USAGE] expert history: 58240 selections (/home/tejes/colibri-models/glm-5.2/.coli_usage)
+[PIN] auto: budget 22.8 GB | plan 3.3 GB (conf 0.29, 58240 selections) | LRU reserve 21.2 GB (cap 13/layer x 1630.3 MB/row-set) | max_pin 1.6 GB -> pinning 1.6 GB  [CAPPED by the LRU reserve]
+[PIN] placement: 0 VRAM + 74 RAM expert (1.6 GB warm) in 6s da /home/tejes/colibri-models/glm-5.2/.coli_usage
+[RAM_GB=47.0] resident 13.0 GB + reserve 11.8 GB (ws 2.4, KV 1x32768 3.0, kvb 2.7), experts 21.5 MB avg x 76 layers -> cap lowered 16->13 (projected peak 46.0 GB)
+[stop] batched serve mode: filtered 17 non-EOS stop tokens (tool-call safety, #401)
+[stop] 1 stop tokens: 154820
+[MTP] single-slot serve: speculation active (draft=1)
+[datapoint] persistent cold request 1/1
+[API] KV slot 0 prefix 0/26 token, prefill 26
+[prefill] layer 1/78 · 26 token · +0.00s
+[prefill] layer 5/78 · 26 token · +10.05s
+[prefill] layer 9/78 · 26 token · +65.60s
+[prefill] layer 13/78 · 26 token · +105.10s
+[prefill] layer 17/78 · 26 token · +135.19s
+[prefill] layer 21/78 · 26 token · +158.85s
+[prefill] layer 25/78 · 26 token · +182.96s
+[prefill] layer 29/78 · 26 token · +217.81s
+[prefill] layer 33/78 · 26 token · +243.99s
+[prefill] layer 37/78 · 26 token · +272.01s
+[prefill] layer 41/78 · 26 token · +301.24s
+[prefill] layer 45/78 · 26 token · +330.35s
+[prefill] layer 49/78 · 26 token · +360.50s
+[prefill] layer 53/78 · 26 token · +388.02s
+[prefill] layer 57/78 · 26 token · +419.41s
+[prefill] layer 61/78 · 26 token · +452.70s
+[prefill] layer 65/78 · 26 token · +482.55s
+[prefill] layer 69/78 · 26 token · +514.36s
+[prefill] layer 73/78 · 26 token · +545.96s
+[prefill] layer 77/78 · 26 token · +581.52s
+[prefill] layer 78/78 · 26 token · +591.43s
+[SPEC_PIN] draft+verify pinned to the S=1 kernel family: int4=exact int8=idot (#163; SPEC_PIN=0 for A/B)
+[MTP] gate: 4 verifies, 27 plain steps chosen (0 after the drafts' probabilities), 3 probes, acceptance 0% (0/5) | T(1) 35665.0 ms, rows 2:2.14, rho 0.79, acceptance by position 0.27 0.60 0.50 0.50 0.50
+[datapoint] warm-identical upper bound 1/1
+[API] KV slot 0 prefix 26/26 token, prefill 0
+[MTP] gate: 5 verifies, 57 plain steps chosen (0 after the drafts' probabilities), 5 probes, acceptance 0% (0/7) | T(1) 35410.8 ms, rows 2:2.11, rho 0.81, acceptance by position 0.23 0.60 0.50 0.50 0.50
+[datapoint] rotating prompt 1/4 (suite 1/4)
+[API] KV slot 0 prefix 3/29 token, prefill 26
+[prefill] layer 1/78 · 26 token · +0.00s
+[prefill] layer 5/78 · 26 token · +16.20s
+[prefill] layer 9/78 · 26 token · +55.86s
+[prefill] layer 13/78 · 26 token · +91.74s
+[prefill] layer 17/78 · 26 token · +120.27s
+[prefill] layer 21/78 · 26 token · +142.54s
+[prefill] layer 25/78 · 26 token · +162.29s
+[prefill] layer 29/78 · 26 token · +191.44s
+[prefill] layer 33/78 · 26 token · +214.86s
+[prefill] layer 37/78 · 26 token · +238.09s
+[prefill] layer 41/78 · 26 token · +262.41s
+[prefill] layer 45/78 · 26 token · +285.43s
+[prefill] layer 49/78 · 26 token · +310.42s
+[prefill] layer 53/78 · 26 token · +336.98s
+[prefill] layer 57/78 · 26 token · +363.75s
+[prefill] layer 61/78 · 26 token · +391.37s
+[prefill] layer 65/78 · 26 token · +420.44s
+[prefill] layer 69/78 · 26 token · +450.87s
+[prefill] layer 73/78 · 26 token · +479.74s
+[prefill] layer 77/78 · 26 token · +511.71s
+[prefill] layer 78/78 · 26 token · +520.26s
+[MTP] gate: 6 verifies, 87 plain steps chosen (0 after the drafts' probabilities), 6 probes, acceptance 12% (1/8) | T(1) 34406.1 ms, rows 2:2.15, rho 0.85, acceptance by position 0.33 0.60 0.50 0.50 0.50
+[datapoint] rotating prompt 2/4 (suite 2/4)
+[API] KV slot 0 prefix 3/30 token, prefill 27
+[prefill] layer 1/78 · 27 token · +0.00s
+[prefill] layer 5/78 · 27 token · +17.06s
+[prefill] layer 9/78 · 27 token · +67.00s
+[prefill] layer 13/78 · 27 token · +101.66s
+[prefill] layer 17/78 · 27 token · +130.27s
+[prefill] layer 21/78 · 27 token · +151.61s
+[prefill] layer 25/78 · 27 token · +173.11s
+[prefill] layer 29/78 · 27 token · +199.78s
+[prefill] layer 33/78 · 27 token · +222.91s
+[prefill] layer 37/78 · 27 token · +244.15s
+[prefill] layer 41/78 · 27 token · +270.17s
+[prefill] layer 45/78 · 27 token · +293.71s
+[prefill] layer 49/78 · 27 token · +320.55s
+[prefill] layer 53/78 · 27 token · +347.51s
+[prefill] layer 57/78 · 27 token · +376.13s
+[prefill] layer 61/78 · 27 token · +402.01s
+[prefill] layer 65/78 · 27 token · +428.31s
+[prefill] layer 69/78 · 27 token · +455.67s
+[prefill] layer 73/78 · 27 token · +483.62s
+[prefill] layer 77/78 · 27 token · +515.79s
+[prefill] layer 78/78 · 27 token · +523.65s
+[MTP] gate: 8 verifies, 116 plain steps chosen (0 after the drafts' probabilities), 8 probes, acceptance 20% (2/10) | T(1) 36491.0 ms, rows 2:2.03, rho 0.94, acceptance by position 0.36 0.60 0.50 0.50 0.50
+[datapoint] rotating prompt 3/4 (suite 3/4)
+[API] KV slot 0 prefix 3/34 token, prefill 31
+[prefill] layer 1/78 · 31 token · +0.00s
+[prefill] layer 5/78 · 31 token · +10.74s
+[prefill] layer 9/78 · 31 token · +57.70s
+[prefill] layer 13/78 · 31 token · +97.71s
+[prefill] layer 17/78 · 31 token · +133.16s
+[prefill] layer 21/78 · 31 token · +161.89s
+[prefill] layer 25/78 · 31 token · +187.74s
+[prefill] layer 29/78 · 31 token · +221.43s
+[prefill] layer 33/78 · 31 token · +249.22s
+[prefill] layer 37/78 · 31 token · +274.03s
+[prefill] layer 41/78 · 31 token · +302.07s
+[prefill] layer 45/78 · 31 token · +330.78s
+[prefill] layer 49/78 · 31 token · +359.50s
+[prefill] layer 53/78 · 31 token · +388.26s
+[prefill] layer 57/78 · 31 token · +423.02s
+[prefill] layer 61/78 · 31 token · +455.06s
+[prefill] layer 65/78 · 31 token · +485.27s
+[prefill] layer 69/78 · 31 token · +514.47s
+[prefill] layer 73/78 · 31 token · +545.19s
+[prefill] layer 77/78 · 31 token · +582.47s
+[prefill] layer 78/78 · 31 token · +591.90s
+[MTP] gate: 10 verifies, 146 plain steps chosen (0 after the drafts' probabilities), 10 probes, acceptance 17% (2/12) | T(1) 36505.4 ms, rows 2:2.05, rho 0.96, acceptance by position 0.30 0.60 0.50 0.50 0.50
+[datapoint] rotating prompt 4/4 (suite 4/4)
+[API] KV slot 0 prefix 3/37 token, prefill 34
+[prefill] layer 1/78 · 34 token · +0.00s
+[prefill] layer 5/78 · 34 token · +11.90s
+[prefill] layer 9/78 · 34 token · +55.20s
+[prefill] layer 13/78 · 34 token · +96.43s
+[prefill] layer 17/78 · 34 token · +126.00s
+[prefill] layer 21/78 · 34 token · +150.39s
+[prefill] layer 25/78 · 34 token · +175.35s
+[prefill] layer 29/78 · 34 token · +206.40s
+[prefill] layer 33/78 · 34 token · +232.95s
+[prefill] layer 37/78 · 34 token · +259.57s
+[prefill] layer 41/78 · 34 token · +285.86s
+[prefill] layer 45/78 · 34 token · +311.22s
+[prefill] layer 49/78 · 34 token · +336.96s
+[prefill] layer 53/78 · 34 token · +363.75s
+[prefill] layer 57/78 · 34 token · +392.96s
+[prefill] layer 61/78 · 34 token · +421.63s
+[prefill] layer 65/78 · 34 token · +450.95s
+[prefill] layer 69/78 · 34 token · +481.29s
+[prefill] layer 73/78 · 34 token · +510.10s
+[prefill] layer 77/78 · 34 token · +541.41s
+[prefill] layer 78/78 · 34 token · +549.92s
+[MTP] gate: 12 verifies, 174 plain steps chosen (0 after the drafts' probabilities), 12 probes, acceptance 29% (4/14) | T(1) 32391.7 ms, rows 2:2.24, rho 0.92, acceptance by position 0.40 0.60 0.50 0.50 0.50

@@ -1,0 +1,17 @@
+[gateway] 262144 tokens of context (3.6 GB of conversation state of 47.0 GB); --ctx sets it
+[OMP] deepseek-v4: 9 compute threads (12 logical CPUs minus 3 expert-loader workers); OMP_NUM_THREADS=<n> overrides, COLI_NO_OMP_TUNE=1 disables
+ram_tiers available=44.21GiB dense=resident(6.27GiB) target_slots=53 target_cache=28.38GiB head=resident-bf16 projected=43.83GiB
+v4_open index=0.81s plan=0.00s (index built once, reused by plan/inventory/head)
+v4_ssd_io mode=direct-aligned fallback=buffered-pread
+v4_hot_policy pin_slots_per_layer=16 repin_interval=6 mode=resident-ram rows16=hot-pins
+v4_dense_resident layers=43 bytes=6.267GiB
+[v4] expert cache: 53 of 256 experts per layer fit and no usage history says which, so it fills as experts are used
+[datapoint] persistent cold request 1/1
+[datapoint] warm-identical upper bound 1/1
+[datapoint] rotating prompt 1/4 (suite 1/4)
+[datapoint] rotating prompt 2/4 (suite 2/4)
+[datapoint] rotating prompt 3/4 (suite 3/4)
+[datapoint] rotating prompt 4/4 (suite 4/4)
+[STATS] 63878 selections across 7542 distinct experts -> /home/tejes/colibri-models/deepseek-v4-flash/.coli_usage
+v4_rows16 packed_slots=2225
+v4_direct reads=23329 flock_reads=0 fallbacks=0 payload_bytes=293546754048

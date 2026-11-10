@@ -1,0 +1,125 @@
+[gateway] 32768 tokens of context (6.0 GB of conversation state of 47.0 GB); --ctx sets it
+[OMP] hot-thread tuning: re-exec once (COLI_NO_OMP_TUNE=1 to skip)
+[KV16] latent KV cache in float16 (half the RAM of float32; KV16=0 keeps float32)
+[MTP] absent (draft=5)
+[RAM_GB=47.0] resident 11.1 GB + reserve 10.7 GB (ws 1.4, KV 1x32768 3.0, kvb 2.7), experts 21.2 MB avg x 75 layers -> cap lowered 16->15 (projected peak 45.7 GB)
+[stop] batched serve mode: filtered 17 non-EOS stop tokens (tool-call safety, #401)
+[stop] 1 stop tokens: 154820
+[MTP] single-slot serve: speculation active (draft=5)
+[datapoint] persistent cold request 1/1
+[API] KV slot 0 prefix 0/26 token, prefill 26
+[prefill] layer 1/78 · 26 token · +0.00s
+[prefill] layer 5/78 · 26 token · +9.99s
+[prefill] layer 9/78 · 26 token · +49.94s
+[prefill] layer 13/78 · 26 token · +125.01s
+[prefill] layer 17/78 · 26 token · +170.67s
+[prefill] layer 21/78 · 26 token · +198.55s
+[prefill] layer 25/78 · 26 token · +225.46s
+[prefill] layer 29/78 · 26 token · +258.35s
+[prefill] layer 33/78 · 26 token · +283.68s
+[prefill] layer 37/78 · 26 token · +307.35s
+[prefill] layer 41/78 · 26 token · +332.40s
+[prefill] layer 45/78 · 26 token · +357.99s
+[prefill] layer 49/78 · 26 token · +385.19s
+[prefill] layer 53/78 · 26 token · +411.58s
+[prefill] layer 57/78 · 26 token · +439.68s
+[prefill] layer 61/78 · 26 token · +469.70s
+[prefill] layer 65/78 · 26 token · +496.66s
+[prefill] layer 69/78 · 26 token · +527.28s
+[prefill] layer 73/78 · 26 token · +559.85s
+[prefill] layer 77/78 · 26 token · +594.42s
+[prefill] layer 78/78 · 26 token · +602.43s
+[datapoint] warm-identical upper bound 1/1
+[API] KV slot 0 prefix 26/26 token, prefill 0
+[datapoint] rotating prompt 1/4 (suite 1/4)
+[API] KV slot 0 prefix 3/29 token, prefill 26
+[prefill] layer 1/78 · 26 token · +0.00s
+[prefill] layer 5/78 · 26 token · +11.37s
+[prefill] layer 9/78 · 26 token · +51.24s
+[prefill] layer 13/78 · 26 token · +83.76s
+[prefill] layer 17/78 · 26 token · +112.08s
+[prefill] layer 21/78 · 26 token · +133.11s
+[prefill] layer 25/78 · 26 token · +153.16s
+[prefill] layer 29/78 · 26 token · +179.27s
+[prefill] layer 33/78 · 26 token · +201.77s
+[prefill] layer 37/78 · 26 token · +222.05s
+[prefill] layer 41/78 · 26 token · +243.30s
+[prefill] layer 45/78 · 26 token · +265.23s
+[prefill] layer 49/78 · 26 token · +288.90s
+[prefill] layer 53/78 · 26 token · +313.36s
+[prefill] layer 57/78 · 26 token · +337.57s
+[prefill] layer 61/78 · 26 token · +363.29s
+[prefill] layer 65/78 · 26 token · +388.13s
+[prefill] layer 69/78 · 26 token · +412.53s
+[prefill] layer 73/78 · 26 token · +440.68s
+[prefill] layer 77/78 · 26 token · +469.19s
+[prefill] layer 78/78 · 26 token · +476.80s
+[datapoint] rotating prompt 2/4 (suite 2/4)
+[API] KV slot 0 prefix 3/30 token, prefill 27
+[prefill] layer 1/78 · 27 token · +0.00s
+[prefill] layer 5/78 · 27 token · +9.43s
+[prefill] layer 9/78 · 27 token · +48.92s
+[prefill] layer 13/78 · 27 token · +80.27s
+[prefill] layer 17/78 · 27 token · +107.58s
+[prefill] layer 21/78 · 27 token · +127.03s
+[prefill] layer 25/78 · 27 token · +145.94s
+[prefill] layer 29/78 · 27 token · +171.66s
+[prefill] layer 33/78 · 27 token · +193.33s
+[prefill] layer 37/78 · 27 token · +213.13s
+[prefill] layer 41/78 · 27 token · +235.14s
+[prefill] layer 45/78 · 27 token · +258.90s
+[prefill] layer 49/78 · 27 token · +282.39s
+[prefill] layer 53/78 · 27 token · +306.56s
+[prefill] layer 57/78 · 27 token · +331.45s
+[prefill] layer 61/78 · 27 token · +355.84s
+[prefill] layer 65/78 · 27 token · +384.45s
+[prefill] layer 69/78 · 27 token · +411.42s
+[prefill] layer 73/78 · 27 token · +442.50s
+[prefill] layer 77/78 · 27 token · +474.56s
+[prefill] layer 78/78 · 27 token · +481.77s
+[datapoint] rotating prompt 3/4 (suite 3/4)
+[API] KV slot 0 prefix 3/34 token, prefill 31
+[prefill] layer 1/78 · 31 token · +0.00s
+[prefill] layer 5/78 · 31 token · +11.27s
+[prefill] layer 9/78 · 31 token · +54.78s
+[prefill] layer 13/78 · 31 token · +90.99s
+[prefill] layer 17/78 · 31 token · +123.14s
+[prefill] layer 21/78 · 31 token · +147.15s
+[prefill] layer 25/78 · 31 token · +171.93s
+[prefill] layer 29/78 · 31 token · +203.98s
+[prefill] layer 33/78 · 31 token · +228.93s
+[prefill] layer 37/78 · 31 token · +252.37s
+[prefill] layer 41/78 · 31 token · +276.98s
+[prefill] layer 45/78 · 31 token · +304.06s
+[prefill] layer 49/78 · 31 token · +330.32s
+[prefill] layer 53/78 · 31 token · +357.19s
+[prefill] layer 57/78 · 31 token · +384.97s
+[prefill] layer 61/78 · 31 token · +414.15s
+[prefill] layer 65/78 · 31 token · +444.22s
+[prefill] layer 69/78 · 31 token · +470.83s
+[prefill] layer 73/78 · 31 token · +501.44s
+[prefill] layer 77/78 · 31 token · +532.98s
+[prefill] layer 78/78 · 31 token · +540.94s
+[datapoint] rotating prompt 4/4 (suite 4/4)
+[API] KV slot 0 prefix 3/37 token, prefill 34
+[prefill] layer 1/78 · 34 token · +0.00s
+[prefill] layer 5/78 · 34 token · +10.91s
+[prefill] layer 9/78 · 34 token · +54.14s
+[prefill] layer 13/78 · 34 token · +91.61s
+[prefill] layer 17/78 · 34 token · +123.35s
+[prefill] layer 21/78 · 34 token · +145.26s
+[prefill] layer 25/78 · 34 token · +168.89s
+[prefill] layer 29/78 · 34 token · +199.37s
+[prefill] layer 33/78 · 34 token · +222.61s
+[prefill] layer 37/78 · 34 token · +246.04s
+[prefill] layer 41/78 · 34 token · +268.26s
+[prefill] layer 45/78 · 34 token · +292.52s
+[prefill] layer 49/78 · 34 token · +318.50s
+[prefill] layer 53/78 · 34 token · +343.44s
+[prefill] layer 57/78 · 34 token · +369.83s
+[prefill] layer 61/78 · 34 token · +395.09s
+[prefill] layer 65/78 · 34 token · +420.97s
+[prefill] layer 69/78 · 34 token · +447.38s
+[prefill] layer 73/78 · 34 token · +473.81s
+[prefill] layer 77/78 · 34 token · +502.47s
+[prefill] layer 78/78 · 34 token · +510.75s

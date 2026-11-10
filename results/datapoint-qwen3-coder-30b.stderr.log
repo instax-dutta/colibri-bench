@@ -1,0 +1,32 @@
+[gateway] 32768 tokens of context (6.4 GB of conversation state of 47.0 GB); --ctx sets it
+[OMP] qwen36: hot-thread tuning, re-exec once (COLI_NO_OMP_TUNE=1 to skip)
+== qwen36 Phase-2 engine | cache=16/layer bits=4 ctx=32768 pilot=0 wide=1 hot=0 smooth=0.30 conf=0.92 ==
+[tok] loaded 151643 pieces (max id 151668) from /home/tejes/colibri-models/qwen3-coder-30b/tokenizer.json
+[meta] loaded: q_heads=32 kv_heads=4 head_dim=128 q_head_dim=128 k_head_dim=128 v_head_dim=128 o_in=4096 rotary_dim=128 n_experts=128 topk=8 inter=768 shared_inter=0 n_group=1 topk_group=1 attn_output_gate=0 n_active=48
+[qwen36] embedding: rows read in place from the checkpoint, COLI_EMBED_MMAP=0 builds the f32 table
+[dense-i8] 241 matrices quantized during load, 4.6 GB f32 freed
+[qwen36] group-scaled experts: gs=64
+resident weights loaded in 10.6s | RSS after load: 1.80 GB
+[qwen36] expert format on disk: int4 packed (tier fmt=4)
+[qwen36] expert kernel: planar int4 in RAM (expert_ffn.h), QWEN_EXPERT_KERNEL=0 restores int8 unpack
+[qwen36] trunk: 241 int8 matrices interleaved by 16 for the CPU in 0.15s (Q36_ILV16=0 keeps the rows)
+[datapoint] persistent cold request 1/1
+[qwen36] KV cache: float16, 0.09 GiB at 1024 positions (half of float32; Q36_KV=f32 keeps float32)
+[qwen36] int4 packed weights detected — kept int4, rows interleaved by 16 for expert_ffn.h (Q36_ILV16=0 keeps the rows)
+[qwen36 spec gate] turn 1: T(1) 1116.0 ms, rows 2:2.41, rho 0.94, acceptance by position 0.25 0.50 0.50 0.50 0.50
+[qwen36 lookup] turn 1: 1.00 tokens/forward (127 forwards per 127 tokens) | acceptance 0.0% (0/2 drafts in 2 verifies) | gate on, 6 declined, 2 probes
+[datapoint] warm-identical upper bound 1/1
+[qwen36 spec gate] turn 2: T(1) 1244.6 ms, rows 2:2.03, rho 0.77, acceptance by position 0.20 0.50 0.50 0.50 0.50
+[qwen36 lookup] turn 2: 1.00 tokens/forward (127 forwards per 127 tokens) | acceptance 0.0% (0/3 drafts in 3 verifies) | gate on, 5 declined, 2 probes
+[datapoint] rotating prompt 1/4 (suite 1/4)
+[qwen36 spec gate] turn 3: T(1) 0.0 ms, rows, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen36 lookup] turn 3: 0.00 tokens/forward (0 forwards per 0 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 0 declined, 0 probes
+[datapoint] rotating prompt 2/4 (suite 2/4)
+[qwen36 spec gate] turn 4: T(1) 0.0 ms, rows, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen36 lookup] turn 4: 0.00 tokens/forward (0 forwards per 0 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 0 declined, 0 probes
+[datapoint] rotating prompt 3/4 (suite 3/4)
+[qwen36 spec gate] turn 5: T(1) 0.0 ms, rows, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen36 lookup] turn 5: 0.00 tokens/forward (0 forwards per 0 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 0 declined, 0 probes
+[datapoint] rotating prompt 4/4 (suite 4/4)
+[qwen36 spec gate] turn 6: T(1) 0.0 ms, rows, rho 0.50, acceptance by position 0.50 0.50 0.50 0.50 0.50
+[qwen36 lookup] turn 6: 0.00 tokens/forward (0 forwards per 0 tokens) | acceptance 0.0% (0/0 drafts in 0 verifies) | gate on, 0 declined, 0 probes

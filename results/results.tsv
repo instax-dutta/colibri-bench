@@ -1,0 +1,10 @@
+model_id	download_gb	prompt_tok_s	decode_tok_s	coli_version	notes
+qwen36-35b	23.0	-	0.65	0a5504a	rotating median 0.65 tok/s (0.63-0.67), warm 0.73, cold 0.69, hit 50.3%, expert disk 171s/req; see datapoint-qwen36-35b.md
+qwen3-coder-30b	19.4	-	0.69	0a5504a	warm-identical 0.69 tok/s, cold 0.72, hit 72.3%; rotating 0.00 FAILED (0 completion tokens, engine stall after 2 reqs) - warm is valid upper bound; see datapoint-qwen3-coder-30b.md
+qwen-image-2.1	31.0	-	-	0a5504a	image_gen: http 200 time=862.5s (14m22s) size=573967B PNG 768x512 steps=8; background-start fix; see datapoint-qwen-image-2.1.md
+deepseek-v4-flash-reap	84.7	-	0.32	0a5504a	xet rotating median 0.32 tok/s (0.31-0.34), warm 0.33, cold 0.30, hit 77.8%, expert disk 495s/req; see datapoint-deepseek-v4-flash-reap.md
+deepseek-v4-flash	166.9	-	0.29	0a5504a	xet rotating median 0.29 tok/s (0.28-0.33), warm 0.34, cold 0.31, hit 61.5%, expert disk 554s/req; see datapoint-deepseek-v4-flash.md
+qwen38-flash-next	185.6	-	0.09	0a5504a	xet rotating median 0.09 tok/s (0.08-0.12), warm 0.12, cold 0.10, hit 19.8%, expert disk+wait 816s/req; see datapoint-qwen38-flash-next.md
+mimo-v2.6-flash	171.8	-	0.07	0a5504a	xet rotating median 0.07 tok/s, warm 0.08, cold 0.08, hit 31.0%, RSS 20.3GB, expert disk 399s/req; see datapoint-mimo-v2.6-flash.md
+glm-5.3	419.3	-	0.03	0a5504a	xet rotating median 0.03 tok/s, warm 0.03, cold 0.03, hit 39.2%, RSS 34.5GB, expert disk 4907s/req; see datapoint-glm-5.3.md
+glm-5.2	429.3	-	0.03	0a5504a	xet rotating median 0.03 tok/s, warm 0.03, cold 0.02, hit 37.0%, RSS 36.1GB, expert disk 5884s/req, MTP acceptance 29% on last req; see datapoint-glm-5.2.md

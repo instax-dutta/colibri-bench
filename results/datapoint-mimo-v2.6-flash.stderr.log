@@ -1,0 +1,9 @@
+[gateway] 65536 tokens of context (3.0 GB of conversation state and 0.0 GB of prompt workspace of 47.0 GB); --ctx sets it
+[mimo] 48 layers (39 sliding window 128, 9 full), 256 experts top-8, cache 16/layer, dense native, ctx 65536, vision -- loaded in 25.70s
+[datapoint] persistent cold request 1/1
+[datapoint] warm-identical upper bound 1/1
+[datapoint] rotating prompt 1/4 (suite 1/4)
+[datapoint] rotating prompt 2/4 (suite 2/4)
+[datapoint] rotating prompt 3/4 (suite 3/4)
+[datapoint] rotating prompt 4/4 (suite 4/4)
+[STATS] 146264 selections across 9309 distinct experts -> /home/tejes/colibri-models/mimo-v2.6-flash/.coli_usage
